@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maincl{
+            background: linear-gradient(to bottom, rgb(114, 114, 223), orange);
+            height: 950px;
+            width: 1890px;
+            margin: -8px;
+            
+            display: flex;
+            top: 0px;
+        }
+        .login{
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 393px;
+            /* display: flex;
+            justify-content: center; */
+            position: relative;
+            left: 80%;
+        }
+        h1{
+            color: orange;
+            font-family: Tahoma, Verdana, sans-serif;
+        }
+        form{
+            margin: 34px;
+        }
+        .in{
+            width: 325px;
+            height: 35px;
+        }
+        button{
+            background-color: orange;
+            border: 0px ;
+            
+        }
+        @media only screen and (max-width: 600px){
+            .maincl{
+        display: flex;
+        justify-content: center; /* horizontal center */
+        align-items: center;     /* vertical center */
+        height: 100%;
+        width: 0px;
+    }
+
+    .login{
+        width: 393px;
+        max-width: 90%;
+        margin: 0;
+    }
+    h1{
+        text-align: center;
+        
+        width: 243px;
+    }
+    [for|=remeber]{
+        width: 82px;
+        display: block;
+        
+    } 
+        }
+    </style>
+</head>
+<body>
+    <div class="maincl">
+        <div class="login">
+        <h1>Login Form</h1>
+        <form action="#">
+            <label for="email">Email:</label><br><br>
+            <input type="email" class="in" required><br><br>
+            <label for="pass">Password:</label><br><br>
+            <input type="password" required class="in"><br><br>
+            <input type="radio">
+            <label for="remeber" >Remeber me</label><br><br>
+            <button class="in">login</button>
+            
+        </form>
+    </div>
+    </div>
+</body>
+</html>
