@@ -6,63 +6,90 @@
     <title>Document</title>
     <style>
         .maincl{
-            background: linear-gradient(to bottom, rgb(114, 114, 223), orange);
-            height: 950px;
-            width: 1890px;
+            background: linear-gradient(to bottom, rgb(177, 177, 221), rgb(229, 188, 112));
+            height: 735px;
+            width: 1410px;
             margin: -8px;
             
             display: flex;
             top: 0px;
         }
+        button:hover{
+            background-color: rgb(237, 110, 64);
+        }
         .login{
-            background-color: rgb(255, 255, 255);
+            background-color:white;
             height: 100%;
-            width: 393px;
-            /* display: flex;
-            justify-content: center; */
+            width: 705px;
+             
             position: relative;
-            left: 80%;
+            left: 50%;
         }
         h1{
-            color: orange;
+            color: orangered;
             font-family: Tahoma, Verdana, sans-serif;
+            position: relative;
+            top:161px;
+            left: 30px;
         }
         form{
             margin: 34px;
+            font-family: Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+            top: 159px;
+            position: relative;
         }
         .in{
-            width: 325px;
-            height: 35px;
+            width: 755px;
+            height: 40px;
         }
         button{
-            background-color: orange;
+            background-color: orangered;
             border: 0px ;
+            color: white;
+            font-weight: bold;
             
         }
         @media only screen and (max-width: 600px){
             .maincl{
         display: flex;
-        justify-content: center; /* horizontal center */
-        align-items: center;     /* vertical center */
+        justify-content: center; 
+        align-items: center;    
         height: 100%;
         width: 0px;
     }
+    .in{
+            width: 435px;
+            height: 40px;
+        }
 
     .login{
-        width: 393px;
-        max-width: 90%;
+        width: 200px;
+        max-width: 50%;
         margin: 0;
+        top: 159px;
     }
     h1{
         text-align: center;
-        
+        position: relative;
+            top:-28px;
+            left: 2px;
         width: 243px;
     }
-    [for|=remeber]{
-        width: 82px;
-        display: block;
+    [for|="remeber"]{
+        width: 102px;
+        display: inline-block;
+        
+        bottom: 20px;
+        position: relative;
+        left: 24px;
         
     } 
+    form{
+        top: 13px;
+        position: relative;
+    }
+    
         }
     </style>
 </head>
@@ -71,13 +98,13 @@
         <div class="login">
         <h1>Login Form</h1>
         <form action="#">
-            <label for="email">Email:</label><br><br>
+            <label for="email">Email:</label><br>
             <input type="email" class="in" required><br><br>
-            <label for="pass">Password:</label><br><br>
-            <input type="password" required class="in"><br><br>
-            <input type="radio">
+            <label for="pass">Password:</label><br>
+            <input type="password" required class="in"><br>
+            <input type="checkbox">
             <label for="remeber" >Remeber me</label><br><br>
-            <button class="in">login</button>
+            <button class="in">Login</button>
             
         </form>
     </div>
