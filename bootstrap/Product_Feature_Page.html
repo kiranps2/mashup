@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+    /* .card border-success mb-3{
+        width: 100px;
+    } */
+</style>
+</head>
+<body>
+    <h1 class="display-1">Product Feature Page</h1>
+    <div class="container" style="display: flex; gap: 30px; margin: 0px; margin-left: 115px;">
+    <div class="card border-success mb-3" style="max-width: 30rem;">
+  <div class="card-header bg-transparent border-success">Mac book</div>
+  <div class="card-body text-success">
+    <img  src="data:image/jpeg;base64,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" class="card-img-top" alt="macbook">
+
+    
+    <p class="card-text"><strong>MacBook</strong> is Apple's premium line of laptop computers, known for its sleek design, powerful performance, and seamless integration with the Apple ecosystem. Featuring high-resolution Retina displays, long battery life, and Apple's advanced M-series chips, MacBooks are ideal for students, professionals, and creative users. They combine portability, reliability, and security to deliver a smooth and efficient computing experience.
+ <a href="#">read more</a></p>
+  </div>
+  <div class="card-footer bg-transparent border-success"><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+    <li><a class="dropdown-item" href="#"> Compare</a></li>
+    <li><a class="dropdown-item" href="#">Report</a></li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="card border-success mb-3" style="max-width: 30rem;">
+  <div class="card-header bg-transparent border-success">nothing 4a pro</div>
+  <div class="card-body text-success">
+    <img  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDw0NDQ8NDQ0NDQ8NDQ0NDQ8NDQ0OFREXFhURFRUYHSggGBolGxUVITEhJSorLi4wFx8zODMtNygtLjcBCgoKDg0NFw8PFSsdFR0rKystLS0rLSstLS0rLS0tKy0rLSstKystLS0tKzctLS0rKy0tLS0tLS0tMisrLSsrLv/AABEIAKgBKwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBAUHBgj/xABGEAACAgECAgQICggEBwEAAAAAAQIDEQQSBSEGMUFRBxMiMmFxgbEUIzNyc3SRwcLRQlJTYqGisrMVJJK0ZIOTlMPh8TT/xAAYAQEBAQEBAAAAAAAAAAAAAAAAAQIDBP/EAB4RAQEAAgIDAQEAAAAAAAAAAAABETECIQMSMlFh/9oADAMBAAIRAxEAPwDqyiNRLFEaiaZQURqJZtJKIFaiNRLNo1ECvaPaWYHtAr2j2k8DwBDaG0swGCCG0NpZgMAwr2j2lmAwFwr2hgswGAYV7Q2lmAwBVtDaW4FgGFe0W0twLAMK9otpbgWAiraG0twLBRTtFtLsCwBS4icS7aLaBQ4icS9xIuIFDiJxLnEjgClxFtLnEW0DIUSSRJIaQEUh4J4HggikPBLA8BUcDwSwPAEMDwSwPAEMDwSwPAEMDwSwGCCOAwSwPAEMBtNLxmuu26Fdu6UYYca98owlNrrlFPEuzk89vea6/U3QblpqaVRW3By8c9PKeGk3HHLCfLymvcXA9XgMHlp9KHRy1ULtP+9fWrKl/wAyGF9rNnw/pFpr8bJwksZ3VzU4pd7zhpexjBltsBglgMEEMBgngNoFeAwFtsI+fOEPnSUfeODUknFqSfU4tNP2lEcCwWYFgCvAYLMCwBXgWCzAsAV4ItFuBYKipxItFrRFoCpoWC1ojgDISGkNIlgilgMEsDwBHA8DwMgWB4GACwPAwARTqblBZ5e3qSXWy813Fq1N1Vyztm5KWHjKSzj+AWMeHFpy51xlKP68tlal83PWTes1H7KX/Uq/I+cunHEdRqOIa1XWzjXp7ZwpqU9sY1xbjDZHqfZl92e5I6L4MuLam/hko3XWKVdihVdLMpuDbxHLznzTeE9nSvht/wCyf+uD+4g9ff8As8Y682V/kct8LfTC/T+I0GltlW7NOtRqL4NxnKEm4whF/o52ybxz6vSeU4r0f1vDqKdfDUzjdmPjvF2SjKEpPycP9L05Jgy7NqdTv1ELMSjlxeJrEuS7l6jmPhC4tZfw3S6dtqEbdLbc8PbPfp7mlJLrW6L9rR63oxrZarT6LUXKHjLoOVm1bYykpSTljsy1n2mN/h2jnw+m3XyrppVUKr3bJKm2l7Nm6XJpuUU47XuTzjqZqdIp6IdIraOBw1l8vGLTaa2EIuXlWOF8qqov0coxyeX6LdMtVfq4w1TqlOxuVFlVMKXCcU5eJe3G6EoqUVnLTa582eo49Dhq4dbZoZ6fV0aX4JKek0+orsUdPVqKpTjybaTjHLb7ct5bPIQ4zoNZdp1ToYaPVriGllRPTqMY2U+OW9WJJJPZl8s9XYQdg6XdKf8AD9FRZBQlfdHbVvzsioxTlZLvS5cvSjlkenHHtQ91d9yhJOUPJop3x/WjFRUtvpPV+ESqE4cHjYk4PTyUoy6mpToi0/ZJnCrFfO+Tbn8N8ctsYrE1apdj/R24WPRjsReMhXvNTxvjk35WrvSf/H3Qz7I8jXa3W6hL/MayfldSnO69y9S3LJk23Rubv8lRVr2bZRipQlNqEox65J7c8upNd5ndAuDVa3U6zUX1x1HwaymuNFjSrcJzlGU3nr2xhKSXazXTPbSaJ6SXnT3yw8/EyqSXe/jG4rOOe2WO43PRLj12h1lLqtsVHj1C+mT8idbltnGcercutSXcmuTaeZ4S+D6WimrV6amvTWV6r4K407VXZDxTsU5RSwpcvslzzyx5Dh9udRLOflaFj0quEfuJdK+q2gwSYjk0jgWCYsAQwLBPAsFEMCaJ4FgCDRFosaE0BW0RwWNCwVFw0gGRQMBkCGAwAAGAAABQazizanQ0steMws4Tex8jZmj6S3yr8XOC3SrUp7f1lyyvsyWLHHOm/E+BRuhDWU6l65Qg9ZDR+JtrqtccuDnZhSkurKSzhF/DPCVwDT0LSR0XEPFbt0nNUzlKX60n4zLPEdKeF3fDNbdXCN8NTbOyu1zUHXvlnPNpN4bWOz0Gjq4fqYbs1Qk5QcU3ZVLZn9JeVjOMmmHUfCDoFxGGk45wjdqa6qo0XVwhvtqVcnKE/F4ecOUlJc+zsyeOu6RcQ1cI6WN12pnYpRt0609Mup8tu2OVy63ywe48FVcqdO9LKxwsuctQoKUoOUIvbKSfLyU5RT736D3vwSPW3CT9NsZNv2vrBlo+i2ht0+l4fRZs8bCvDSllbnuk1ntxu61yPBdONb43QV0xc3TRbpZ8o+bJaa2l7u5K2LWf3/SdMmsanSpLyYyvk5ZWHKSy0ueW85z3HneOdFNTG+27Rxpvqtc5ui2UYqDnzshiXkzg3z2yTWcPGUmByfot/wDu0Kxv8bqq9PZW1lWUWtV2wfolCc0/WdM4b0Lp0F0tZGduq2PbpqXBKVKsexznLPltRk+xdr68Yr4fw+zS3QvnwZRtg8K/Swqlti+UsQilHLWVnr58j0n+K16nNMKNRXY8Jq2qcFFfrPPLljPWW9kqnwj+Zwnrz8FaWM/ttP2HKtZxrTRlKtq63avFy2OKhJLk4ZzmUezHV60dP8Kt7rr4VZFZUNPKTiutxjOmTx7InGpcLlhql021SeYXOyuE9q6otSaafekvaXjorb6fpHp5zhXKqVSbUY2OUZKDfJZWOS9K6vSZei1mp0VlttEKrqb8q/S6hKyqck3ynBtbtsuaaeU89mc+choXHarrKXWpqcq4TzObS83djC7st8st8+o3VGqpw3bfSrJOU5tTjhylJt4WerLf2mmdMni3GNVrnSr4UUUUZ8VpdNHxdO9vO5xy+frfsWWzWcJg43NP9rR6exIyb7anCcq7Y2uEXKSjhbY9+c+lFWgulOdEpx2fGUwjGPJqCkox3d7xj7DNamMf19XiGByaIQwCEIYARFgkICImiQiiGBEmIC0YkMgYAMAABoAAACgAAANF0jliVXzZe83p57pR51Pftln1ZWPvLG+H08xquAaO6btlBwsfXKqyVTfrSeCC6LaPv1H/AHFn5mxhIyISNOt4T8YFXR+iONtmrWOrGruWP4k58FracXbrWmsNfDb+a+0z1IbYT0n40MdJCnUaKmmDhTRG5Lyspb4J45vLfKTN3v5mp1luNXTHHXvk3nqxWuWPaZu8PPd1fKwx7rCMplFswjSeFWWK+EfVrP8AxnL7uHaaTcnWsvr2ylBN+pM6Z4WX8Xwf6pZ7qjm85FmhjPh2mXVVH2uT+8i9JQuquH2FspFcmURVNaeVCCa6morKMjRvNtH09X9xGM2XaD5aj6en+5Eg+sgADm0BDABCGDCEJjYgEIbEURYiQgJjEMgYxIAGNCABgABQAAAHnOlXnVPvjJfx/wDZ6M810vliVHzZ+9Fjfj+mnhIshMxIzJKZXdmqZJSMOMy2EgNbq4r4XGfPKWFzeEnXl8ursRmKZg6uX+Z9i/tl6kV5OW6slIoskEplFkwjVeFx/F8G+pz91RzWbOkeF1/F8F+pT91RzSbLNCMpFcmSkVsAyZHDn8fp/rFH92JimTw75fT/AFij+9AD60AAObQAAAQMBBAxDYmAmJjEyhCAQE0MiiSAYxAQSAQASQCGFAAAAeT6ayxOj5k/ej1h43p3L4yj5kveg34/ppIWE1MwK7s5x2Nr2ovUyvQy4zL4SMGMzIrmGWDqpf5l+r8CLd5h32Z1Emu2Kf8AKibmaeW7WuZRbYKUzFun1ev7gyq8Lz+L4L9Sn7qjmsmdI8L/AMnwX6lP3VHNGyzSoyIMlJkGwAyNB8tR9Y039+BitmTw75aj6xpv9xWB9bAAjm0YgEEMQCABAACEDEygZEbEBNDEhoBjEhkAMQwGgEMBgIYUHiPCBL43T/Ry/qPbnifCHVLdp5/ouMo57Nyecfx/gw34/p5Srln0yb5ekvjMxMtc5ZXcpcm+f/0lC1FehnRkXxm8PHXh49ZgQtRlVWoiNfJ4ufVyrj5ryvNj1MlCXOXzvuRVqZr4RZh9VcO3L82Abus28d3VkpmFqJrdDv8AKx9hdKRiXS7e7PuCLvDC/I4J9Rn7qjmZ07wz6azxfA7MPZ8Ftob7rNtMlH1tRl/pZzCXL0CaWk2QbBsg2UKbMzhfy2n+sab/AHFZhMzODJy1WkhHnKeq00YpdsnqK8ID63YAxHNQACAAAAEJjYgEIZFlCABATQ0JDQEhkRkDGIYANCGADEADNV0hvqVarsrja7PNhLqWP0srmuvsNqeb6T/K1/R/iYjU283LhFDeUnH0ReUvtyyceDU/vfy/kZsC6Jp0zWuXBKf3v5fyJx4LUu2f2x/I2SJL1A9q5t0n0Go0uuV9dOou0t0Ipzpqne4SUdrjJQWV5qecY5mVBWzSVdV0s83tptl7OUeXb1nvlDdJJ9RmJ93IZcbO3PIcF18/N09mO+WyH9ckzYcL6HX2WwWqnCqncnNKe6ySz5qwsLPfnkezcitsmUwzOlWi0d+mlptZTG+qbW2vLg4yXVKMlzi13rvOVarwaaBtuF+vrTfKPjaZqK7k3Xn7WdP4+8+IffBv3Glkgrn1ngz0vZqtX7VS/wAJjWeDans1l69dNcvc0dEmjHsQyOb2+Dtrq1v26XP4z2ng16I8L02phbZZdqNdFN0+OjCFEZY5yhFZ8rGetv0czJtiY9LcbaZx5ON1ck/SpoqOsgwAypAAAIQxAITGIoTENkWAMiNiCJokVpkkwqaGQyPIEhkcjyQSAjkYEgEADPO9JF8bX9H+JnoTQ9IVmyH0f4mWNcdtTUuv1suihQiWxiVoJEsDUSeACv7iYoL3EkiMUiDLMEGgi3jnVp/o/wAjTyNzxvq0/wBH+RqJIDHmUTRkyRTOIGJYjGUfLh8+H9SM6cTHUPKh8+P9SA6exAxEDEAgAQZFkoBBkTYAyLBsTYAyOQbFkqJJkkxABLI8gBFPI8gADyPIAAZHkQEDNNxyObIfM+9gBYvHbBjAsURgVtJRHtAAJRj7iW0AIwTiRcQAIs4wuVH0f5GqlEAArlEqlAQAVSgU+L8qPzo+8AA6I2LIAAsiyMAI5E2AAJsTYgCE2RbGBRFsjkAA/9k=" class="card-img-top" alt="macbook">
+
+    
+    <p class="card-text"><strong>Nothing Phone (3a) Pro</strong> is a stylish mid-range smartphone that stands out with its transparent design and signature Glyph LED lighting. It features a powerful Snapdragon 7s Gen 3 processor, a vibrant 6.77-inch 120Hz AMOLED display, a versatile triple-camera system with a 50MP periscope zoom lens, and a long-lasting 5000mAh battery with 50W fast charging. Running on Nothing OS, it offers a clean, smooth Android experience with useful AI-powered features.
+
+ <a href="#">read more</a></p>
+  </div>
+  <div class="card-footer bg-transparent border-success"><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+    <li><a class="dropdown-item" href="#"> Compare</a></li>
+    <li><a class="dropdown-item" href="#">Report</a></li>
+  </ul>
+</div>
+</div>
+</div>
+
+<div class="card border-success mb-3" style="max-width: 40rem;">
+  <div class="card-header bg-transparent border-success">Nothing Headphone</div>
+  <div class="card-body text-success">
+    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWPQMB14aOighJ7_YhK-tXPfj-FEG1Wh7ZiQ&s" class="card-img-top" alt="macbook">
+
+    
+    <p class="card-text"><strong>Nothing Headphone (1)</strong> is a premium over-ear wireless headphone that combines a distinctive transparent-inspired design with high-quality audio performance. It features active noise cancellation (ANC), immersive spatial audio, long battery life, and comfortable ear cushions for extended listening sessions. Designed to deliver rich sound and seamless connectivity, it offers a stylish and modern listening experience for music, calls, and entertainment.
+
+ <a href="#">read more</a></p>
+  </div>
+  <div class="card-footer bg-transparent border-success"><div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown link
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li><a class="dropdown-item" href="#">Add to Wishlist</a></li>
+    <li><a class="dropdown-item" href="#"> Compare</a></li>
+    <li><a class="dropdown-item" href="#">Report</a></li>
+  </ul>
+</div>
+</div>
+</div>
+</div>
+<h1 class="display-1">product FAQs</h1>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What is your company/product/service about?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+We provide high-quality solutions designed to help individuals and businesses achieve their goals more efficiently. Our products and services are focused on delivering value, reliability, and exceptional customer support to ensure the best possible experience.      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How do I get started?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+Getting started is simple. Create an account, choose the service or product that best fits your needs, and follow the step-by-step setup process. If you need assistance, our support team is available to guide you every step of the way.      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        How much does it cost?
+
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+Our pricing varies depending on the plan or service you choose. We offer flexible options to suit different budgets and requirements. Please visit our pricing page or contact us directly for detailed pricing information and customized quotes.      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
