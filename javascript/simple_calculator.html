@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <p style="display: inline;">rice:</p>
+    <p id="rice" style="display: inline;"></p><br>
+    <p style="display: inline-block;">sugar:</p>
+    <p id="sugar" style="display: inline-block;"></p><br>
+    <p style="display: inline-block;">wheat:</p>
+    <p id="wheat" style="display: inline-block;"></p>
+    <script language = "javascript" type = "text/javascript">
+        var names=["rice", "sugar","wheat"]
+        var price=[30,40,20]
+        var quantities=[2,3,4]
+         var newquantities=[2,2,4];
+        document.getElementById("rice").innerHTML=price[0]
+        document.getElementById("sugar").innerHTML=price[1]
+        document.getElementById("wheat").innerHTML=price[2]
+        
+        console.log("rice total sold:",price[0]*quantities[0])
+        console.log("sugar total sold:",price[1]*quantities[1])
+        console.log("wheat total sold:",price[2]*quantities[2])
+        console.log("total sold:",price[0]*quantities[0]+price[1]*quantities[1]+price[2]*quantities[2])
+        console.log("rice total sold:",price[0]*newquantities[0])
+        console.log("sugar total sold:",price[1]*newquantities[1])
+        console.log("wheat total sold:",price[2]*newquantities[2])
+        console.log("total sold:",price[0]*newquantities[0]+price[1]*newquantities[1]+price[2]*newquantities[2])
+
+    </script>
+</body>
+</html>
