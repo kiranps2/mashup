@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>store</h1>
+    <p>total:</p>
+    <p id="total"></p>
+    <h1>After Change the price</h1>
+    <p>total:</p>
+    <p id="total2"></p>
+    <script language = "javascript" type = "text/javascript">
+        var tshirt=400
+        var tshirtsold=5
+        var capsold=3
+        var caps=150
+        document.getElementById("total").innerHTML=(tshirtsold*tshirt)+(capsold*caps)
+        var tshirt=450
+        document.getElementById("total2").innerHTML=(tshirtsold*tshirt)+(capsold*caps)
+    </script>
+</body>
+</html>
