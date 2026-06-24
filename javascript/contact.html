@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>contact</h1>
+    <p id="fff"></p>
     <script language = "javascript" type = "text/javascript">
         let contact1={
             name:"kevin",
@@ -17,6 +18,21 @@
             },
         };
         contact1.getinfo();
+        function printContactInfo(contact){
+            document.getElementById("fff").innerHTML=contact.getinfo();
+        }
+        printContactInfo(contact1);
+
+        let contact2={
+            name:"nandana",
+            phone:123334567890,
+            email:"nandana@gmail.com",
+            getinfo:function(){
+                document.write(contact2.name+" "+contact2.phone+" "+contact2.email)
+            },
+        };
+        contact2.getinfo();
+        printContactInfo(contact2);
     </script>
 </body>
 </html>
