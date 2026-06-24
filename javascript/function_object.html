@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>library</h1>
+    <p id="fff"></p>
+    <script language = "javascript" type = "text/javascript">
+        let book={
+            title:"The Alchemist",
+            author:"Paulo Coelho",
+            year:1988,
+            getBookSummary:function(){
+                document.write(book.title+" a very good novel by "+book.author+"  published in "+book.year)
+            },
+        }
+        book.getBookSummary();
+        function printBookSummary(){
+            document.getElementById("fff").innerHTML="The book "+book.title+" was written by "+book.author+" in 1988."
+
+        }
+        printBookSummary();
+    </script>
+</body>
+</html>
