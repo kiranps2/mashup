@@ -18,11 +18,11 @@
             },
         }
         book.getBookSummary();
-        function printBookSummary(){
-            document.getElementById("fff").innerHTML="The book "+book.title+" was written by "+book.author+" in 1988."
+        function printBookSummary(bookobj){
+            document.getElementById(fff).innerHTML=(bookobj.getBookSummary());
 
         }
-        printBookSummary();
+        printBookSummary(book);
     </script>
 </body>
 </html>
