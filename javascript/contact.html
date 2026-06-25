@@ -8,18 +8,20 @@
 <body>
     <h1>contact</h1>
     <p id="fff"></p>
+    <p id="fff2"></p>
+    <p id="fff3"></p>
     <script language = "javascript" type = "text/javascript">
         let contact1={
             name:"kevin",
             phone:1234567890,
             email:"kevin@gmail.com",
             getinfo:function(){
-                document.write(contact1.name+" "+contact1.phone+" "+contact1.email)
+                return(contact1.name+" "+contact1.phone+" "+contact1.email+"<br>")
             },
         };
-        contact1.getinfo();
+        document.getElementById("fff2").innerHTML=contact1.getinfo();
         function printContactInfo(contact){
-            document.getElementById("fff").innerHTML=contact.getinfo();
+            document.getElementById("fff").innerHTML+=contact.getinfo();
         }
         printContactInfo(contact1);
 
@@ -28,11 +30,11 @@
             phone:123334567890,
             email:"nandana@gmail.com",
             getinfo:function(){
-                document.write(contact2.name+" "+contact2.phone+" "+contact2.email)
+                return(contact2.name+" "+contact2.phone+" "+contact2.email+"<br>")
             },
         };
-        contact2.getinfo();
-        printContactInfo(contact2);
+        document.getElementById("fff3").innerHTML=contact2.getinfo();
+         printContactInfo(contact2);
     </script>
 </body>
 </html>
