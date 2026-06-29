@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+<script>
+function getrandom(){
+return Math.floor(Math.random() * 100) + 1;
+}
+var ran=getrandom()
+document.write(ran+"<br>")
+userscore='45'
+newscore=Number(userscore)
+diff=Math.abs(ran-newscore)
+document.write(newscore+" ")
+document.write(typeof newscore+"<br>")
+document.write(diff+"<br>")
+document.write("log="+Math.log(newscore)+"<br>")
+document.write("square="+Math.sqrt(newscore)+"<br>")
+document.write("log(pi)="+Math.log(Math.PI)+"<br>")
+document.write('20'*5+"<br>")
+document.write("max="+Math.max(10,20,ran)+"<br>")
+document.write("min="+Math.min(10,20,ran))
+
+</script>
+</body>
+</html>
