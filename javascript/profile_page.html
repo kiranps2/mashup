@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="profile.check()">button</button>
+    <script language = "javascript" type = "text/javascript">
+        var userName ='kiran';
+        var agee=20;
+        var isadmin=true;
+        let profile={
+            name:userName,
+            age:agee,
+            admin:isadmin,
+            check:function(){
+                var eligible=(this.age>=18 && this.admin==true)?"Access Granted<br>":"Access Denied<br>"
+                document.write(eligible)
+                var ageexists =('age' in profile)?"exists<br>":"doesn't exists<br>"
+                document.write(ageexists)
+                delete profile.age
+                console.log(profile)
+
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>
