@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="order.checkk();">button</button>
+    <script language = "javascript" type = "text/javascript">
+        let order={
+            itemName:'watch',
+            isDelivered:true,
+            daysSinceDelivery:5,
+            checkk:function(){
+               var eligible=(this.isDelivered==true && this.daysSinceDelivery<=7)?"Eligible for Return":"Not Eligible for Return"
+               document.write(eligible)
+            }
+        };
+        
+    </script>
+</body>
+</html>

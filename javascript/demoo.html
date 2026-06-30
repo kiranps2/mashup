@@ -7,23 +7,20 @@
 </head>
 <body>
     <script language = "javascript" type = "text/javascript">
-        function onee(){
-            var hell="hello"
-            document.write(hell+" <br>")
-            function twoo(){
-                var name="kiran"
-                document.write(hell+" "+name+"<br>")
-                function threee(){
-                    var time="morning"
-                    document.write(hell+" "+name+" "+time+"<br>")
-
-                }
-                threee()
-            }
-            twoo()
-            
+        function onee(hell){
+        twoo(hell)
         }
-        onee()
+        
+        function twoo(hell){
+            var ss=hell+" "+"kiran"
+            threee(ss)
+         }
+            
+            function threee(ss){
+                    
+                    document.write(ss+" "+"goodmorning")
+                }
+            onee("hello")    
     </script>
 </body>
 </html>
