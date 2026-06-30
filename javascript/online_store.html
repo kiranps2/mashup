@@ -13,10 +13,18 @@
             isDelivered:true,
             daysSinceDelivery:5,
             checkk:function(){
-               var eligible=(this.isDelivered==true && this.daysSinceDelivery<=7)?"Eligible for Return":"Not Eligible for Return"
+               var eligible=(this.isDelivered==true && this.daysSinceDelivery<=7)?"Eligible for Return <br>":"Not Eligible for Return <br>"
                document.write(eligible)
+               
             }
+            
         };
+        var proname=(order.itemName=='watch')?"exists <br>":"doesn't exist<br>"
+               document.write(proname)
+                delete order.daysSinceDelivery
+                console.log(order)
+                var eligible=(order.isDelivered==true && order.daysSinceDelivery<=7)?"Eligible for Return <br>":"Not Eligible for Return <br>"
+               document.write(eligible)
         
     </script>
 </body>
