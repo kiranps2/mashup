@@ -22,12 +22,17 @@
             }
             txt+="</ul>";
             document.write(txt);
-            var filt=fruits.map(myfunction);
-            filt.filter(myfunction2);
+           var pp= fruits.filter(myfunction2);
             function myfunction2(value,index){
-                document.write(price[index] > 50+"<br>")
+                return price[index]>50
+
             }
-        
+            document.write(pp+"<br>")
+                fruits.push("Watermelon");
+                price.push(80);
+        // document.write(fruits)
+        // document.write(price)
+            fruits.map(myfunction);
     </script>
 </body>
 </html>
