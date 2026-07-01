@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        
+        var fruits = ["apple", "orange" ,"grapes","mango"];
+        var price=[50,40,70,80];
+        var len=fruits.length;
+        fruits.map(myfunction);
+        function myfunction(value,index){
+            document.write("product:"+value+"-")
+            document.write("price:"+price[index]+"<br>")
+        }
+        txt="<ul>"
+            for(i=0;i<len;i++){
+                txt+="<li>"+fruits[i]+"</li>";
+            }
+            txt+="</ul>";
+            document.write(txt);
+            var filt=fruits.map(myfunction);
+            filt.filter(myfunction2);
+            function myfunction2(value,index){
+                document.write(price[index] > 50+"<br>")
+            }
+        
+    </script>
+</body>
+</html>
