@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        let friend={
+            name:"kailas",
+            birthDate:"2003-02-12"
+        }
+        function getBirthdayDetails(){
+            var birth=new Date(friend.birthDate)
+            var year=birth.getFullYear()
+            var currentyear=new Date().getFullYear()
+            var age=currentyear-year
+            document.write(birth+"<br>")
+            document.write(birth.toDateString()+"<br>")
+            document.write("age:"+age+"<br>")
+            document.write(friend.name+" was born on "+birth.toDateString()+" and "+age+" years old")
+        }
+        getBirthdayDetails();
+    </script>
+</body>
+</html>
