@@ -37,30 +37,32 @@
                 return total+value.score
             }
             document.write("total:"+total+"<br>")
-            var pass=student.filter(passs)
+            var pass=student.every(passs)
             function passs(value,index){
                 return value.score>35
             }
-            txt="<ul>"
-             for(i=0;i<pass.length;i++){
-                 txt+="<li>"+pass[i].name+"</li>";
-             }
-             txt+="</ul>";
-            document.write("passed studentd:"+txt+"<br>");
+            // txt="<ul>"
+            //  for(i=0;i<pass.length;i++){
+            //      txt+="<li>"+pass[i].name+"</li>";
+            //  }
+            //  txt+="</ul>";
+            // document.write("passed studentd:"+txt+"<br>");
+            document.write("checked over 35:"+pass+"<br>")
             ///
-            var over90=student.filter(over9)
+            var over90=student.some(over9)
             function over9(value,index){
                 return value.score>=90
             }
-            txt="<ul>"
-             for(i=0;i<over90.length;i++){
-                 txt+="<li>"+over90[i].name+"</li>";
-             }
-             txt+="</ul>";
-            document.write("over 90 studentd:"+txt);
+            document.write("checked over 90:"+over90+"<br>")
+            // txt="<ul>"
+            //  for(i=0;i<over90.length;i++){
+            //      txt+="<li>"+over90[i].name+"</li>";
+            //  }
+            //  txt+="</ul>";
+            // document.write("over 90 studentd:"+txt);
             
             function sortt(){
-                student.sort(function (a,b){return a.score-b.score});
+                student.sort(function (a,b){return b.score-a.score});
                 document.write("sorted:<br>")
                 txt="<ul>"
             for(i=0;i<student.length;i++){
