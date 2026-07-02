@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        var past_date=new Date(2012,11,20)
+        var current_date=new Date()
+        var pastyear=past_date.getFullYear()
+        var currentyear=current_date.getFullYear()
+        var day=currentyear-pastyear
+        document.write(past_date+"<br>")
+        document.write("How many full years have passed since that date:"+day+"<br>")
+        if(current_date>past_date){
+            document.write("It has been more than a year since that date <br>")
+        }
+        else{
+            document.write("It has been less than a year since that date")
+        }
+    </script>
+</body>
+</html>
