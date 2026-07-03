@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        var product=[
+            {code:"apple",rate:10},
+            {code:"banana",rate:20},
+            {code:"mango",rate:30}
+        ];
+        var total1 = 0;
+var total2 = 0;
+var total3 = 0;
+        for(var i=0;i<=5;i++){
+           var code=prompt("Enter the fruit: ");
+            var quantity=parseInt(prompt("Enter the quantity: "));
+            document.write("code: "+code+"<br>")
+            switch(code){
+            case product[0].code:
+                var total1=product[0].rate*quantity
+                document.write("quantity: "+quantity+"<br>")
+                document.write("total:"+total1+"<br>")
+                // document.write("item name:"+product[0].code1+"<br>")
+                break
+            case product[1].code:
+                var total2=product[1].rate*quantity
+                document.write("quantity: "+quantity+"<br>")
+                document.write("total:"+total2+"<br>")
+                // document.write("item name:"+product[1].code1+"<br>")
+                break
+            case product[2].code:
+                var total3=product[2].rate*quantity
+                document.write("quantity: "+quantity+"<br>")
+                document.write("total:"+total3+"<br>")
+                // document.write("item name:"+product[0].code1+"<br>")
+                break
+                default:
+                    document.write("item not found")
+                    continue;
+                    
+        }
+            
+        }
+        var grandtotal=total1+total2+total3
+            document.write("grand total:"+grandtotal+"<br>")
+            if(grandtotal>100){
+                document.write("High purchase<br>")
+            }
+            else{
+                document.write("normal purchase<br>")
+            }
+        
+    </script>
+</body>
+</html>
