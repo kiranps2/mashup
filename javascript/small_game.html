@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        for(var i=0;i<5;i++){
+            var nom=Number(prompt("enter a number between 1-5"))
+            if(nom>=6){
+               
+                document.write("Invalid input")
+                continue
+            }
+            
+            else if(nom==3){
+                 document.write("You guessed it right!<br>")
+                 
+            }
+            else{
+                document.write("Wrong guess. Try again.<br>")
+                 break
+            }
+            switch(nom){
+                case 1:
+                   if(nom==1){
+                    var n="one"
+                    document.write(n+"<br>")
+                   }
+                    break
+                case 2:
+                   if(nom==2){
+                    var n="two"
+                    document.write(n+"<br>")
+                   }
+                    break
+                case 3:
+                   if(nom==3){
+                    var n="three"
+                    document.write(n+"<br>")
+                   }
+                    break
+                case 4:
+                   if(nom==4){
+                    var n="four"
+                    document.write(n+"<br>")
+                   }
+                    break
+                case 5:
+                    if(nom==5){
+                    var n="five"
+                    document.write(n+"<br>")
+                   }
+                    break
+                default:
+                    document.write("Invalid inputttttt!")
+                    continue;
+            }
+
+        }
+    </script>
+</body>
+</html>
