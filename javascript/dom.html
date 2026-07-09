@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form1">
+        <label for="">enter the text</label>
+        <input type="text" id="area">
+        <button id="sub" onclick="kkclick()" type="button">submit</button>
+    </form>
+    <p id="demo" onmouseover="mover()" onmouseout="mout()"></p>
+    <script language = "javascript" type = "text/javascript">
+        
+        function kkclick(){
+            var myelement=document.getElementById("area").value
+            document.getElementById("demo").innerHTML="Hello i am "+myelement
+            document.getElementById("demo").style.color = "blue";
+            
+        }
+        function mover(){
+            document.getElementById("demo").style.color = "green";
+            }
+            function mout(){
+                document.getElementById("demo").style.color = "blue";
+            }
+    </script>
+</body>
+</html>
