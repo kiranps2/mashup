@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">name</label>
+        <input type="text" id="name">
+        <label for="feed">feedback</label>
+        <textarea name="" id="feedback"></textarea>
+        <button type="button" id="sub" onclick="kkclick()">submit</button>
+    </form>
+    <p id="con"></p>
+    <p id="thanks"></p>
+    <script language = "javascript" type = "text/javascript">
+        function kkclick(){
+            var myname=document.getElementById("name").value
+            var myfeed=document.getElementById("feedback").value
+            document.getElementById("con").innerHTML="hello "+myname+" your feedback is stored "+myfeed
+    
+            conformation()
+
+
+        }
+        function conformation() {
+  document.getElementById("thanks").innerHTML = "Thanks for your feedback!"
+  document.getElementById("thanks").style.color = "green";
+  setTimeout(function () {
+        document.getElementById("thanks").innerHTML = "";
+    }, 5000); 
+}
+
+    </script>
+</body>
+</html>
