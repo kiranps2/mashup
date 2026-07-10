@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        var km=Number(prompt("enther the km"))
+        var miles=(km* 0.62137).toFixed(2)
+        var cel=Number(prompt("enter the Celsius "))
+        var far=((cel*(9/5))+32).toFixed(2)
+        var fin=Number(prompt("enther the number"))
+        document.write("kl="+km+"<br>")
+        document.write("miles="+miles+"<br>")
+        document.write("Celsius ="+cel+"<br>")
+        document.write("farenheit="+far+"<br>")
+        document.write("random number="+Math.random()+"<br>")
+        if(fin<0){
+            document.write("negative <br>")
+        }
+        else if(fin>0){
+            document.write("positive <br>")
+        }
+        else{
+            document.write("zero <br>")
+        }
+        if(fin%2==0){
+            document.write("even <br>")
+        }
+        else{
+            document.write("odd <br>")
+        }
+    </script>
+</body>
+</html>
