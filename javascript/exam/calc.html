@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="1">enter the first number</label>
+        <input type="number" id="first"><br><br>
+        <label for="2">enter second number</label>
+        <input type="number" id="second"><br><br>
+        <select id="operator">
+        <option id="add">+</option>
+        <option id="sub">-</option>
+        <option id="div">/</option>
+        <option id="mul">*</option>
+</select><br><br>
+<button onclick="cal()" type="button">=</button>
+    </form><br><br>
+    <p id="result"></p>
+    <script language = "javascript" type = "text/javascript">
+        
+
+        function add(num1,num2){
+            return num1+num2
+        }
+        function sub(num1,num2){
+            return num1-num2
+        }
+        function div(num1,num2){
+            return num1/num2
+        }
+        function mul(num1,num2){
+            return num1*num2
+        }
+        function cal(){
+            var num1=Number(document.getElementById("first").value)
+        var num2=Number(document.getElementById("second").value)
+        var operatorr = document.getElementById("operator").value;
+            if(operatorr=="+"){
+            resultt=add(num1,num2)
+            }
+            else if(operatorr=="-"){
+                resultt=sub(num1,num2)
+            }
+            else if(operatorr=="/"){
+                resultt=div(num1,num2)
+            }
+            else if(operatorr=="*"){
+                resultt=mul(num1,num2)
+            }
+            document.getElementById("result").innerHTML=resultt
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript" type = "text/javascript">
+        var a=Number(prompt("enter the number"))
+        var temp=a
+        var sum=0
+        var lenn=a.length
+        while(temp>0){
+            var reminder=temp%10
+            sum+=reminder**lenn
+            
+            temp=parseInt(temp/10)
+        }
+        if(sum==a){
+            document.write("armstrong number")
+        }
+        else{
+            document.write("not armstrong number")
+        }
+    </script>
+</body>
+</html>
