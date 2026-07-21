@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="start()" type="button">start</button>
-    <p id="result"></p>
+    <!-- <button onclick="start()" type="button">start</button> -->
+    
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="start()">
+  start
 </button>
 
 <!-- Modal -->
@@ -24,7 +24,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p id="result2"></p>
+        <h1 id="result2"></h1>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -33,6 +33,7 @@
     </div>
   </div>
 </div>
+<h1 id="result"></h1>
     <script language = "javascript" type = "text/javascript">
         
         function start(){
