@@ -2,5 +2,5 @@ INSERT INTO `movies`(`ID`, `title`, `genre`, `release_year`, `rating`, `box_offi
 SELECT `title`,`box_office` AS Earnings FROM `movies` WHERE 1;
 SELECT `title` AS "Movie Title",genre AS Category FROM `movies` WHERE 1;
 SELECT *,release_year AS "IMDB SCORE" FROM `movies` WHERE 1;
-SELECT `ID`, `title`, `genre`, `release_year` AS "Release", `rating`, `box_office` FROM `movies` WHERE release_year BETWEEN 2008 AND 2015;
+SELECT *, `release_year` AS "Release" FROM `movies` WHERE release_year BETWEEN 2008 AND 2015;
 SELECT *,rating AS "High Rated Movies" FROM `movies` WHERE rating>8.5;
