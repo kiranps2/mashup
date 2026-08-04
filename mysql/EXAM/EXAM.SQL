@@ -1,0 +1,12 @@
+CREATE TABLE `employee`.`employee` (`ID` INT(25) NOT NULL AUTO_INCREMENT , `NAME` VARCHAR(25) NOT NULL , `department` VARCHAR(25) NOT NULL , `leave` INT(25) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+CREATE TABLE `employee`.`exam` (`ID` INT(25) NOT NULL AUTO_INCREMENT , `EMPLOYEE_ID` INT(25) NOT NULL , `EXAM_STATUS` VARCHAR(25) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
+INSERT INTO Employee (id, Name, Department, leavee) VALUES (1, 'Raju', 'Sales', 1), (2, 'Sangeetha', 'Sales', 3), (3, 'Vinay', 'Operations', 8), (4, 'Abey', 'Packing', 2), (5, 'Thomas', 'Packing', 1), (6, 'Muneer', 'Operations', 7), (7, 'Aparna', 'Sales', 3), (8, 'Abid', 'Operations', 9), (9, 'Fathima', 'Sales', 11), (10, 'Varghese', 'Operations', 14);
+INSERT INTO Exam (id, Employee_id, exam_status) VALUES (1, 2, 'Pass'), (2, 5, 'Fail'), (3, 1, 'Fail'), (4, 8, 'Pass'), (5, 3, 'Pass'), (6, 1, 'Pass'), (7, 6, 'Fail'), (8, 9, 'Pass'), (9, 10, 'Pass');
+SELECT * FROM `employee` WHERE leavee>=5 AND department="SALES";
+SELECT *,COUNT(department) FROM employee WHERE department="OPERATIONS";
+select department,count(department) as "no of employee" from employee GROUP BY department;
+SELECT department,sum(leavee) as "total" from employee group by department HAVING total>=10;
+select employee.id,employee.name,exam.EXAM_STATUS from employee,exam where employee.id=exam.EMPLOYEE_ID AND Exam.exam_status = 'Pass';
+alter TABLE exam add FOREIGN key(employee_id) REFERENCES employee(id);
+select employee.id,employee.name,exam.EXAM_STATUS from employee inner join exam on employee.id=exam.EMPLOYEE_ID AND Exam.exam_status = 'Pass';
+select employee.id,employee.name,exam.EXAM_STATUS from employee inner join exam on employee.id=exam.EMPLOYEE_ID AND Exam.exam_status = 'fail';
